@@ -11,27 +11,34 @@ import AOS from '../image/aosmith.png'
 export default function History(){
     const styleImg = {
         "borderRadius": "50%",
-        "height": "60px"
+        "height": "70px"
     }
     const overrideImg ={
         "borderRadius": "50%",
-        "height":"50px"
+        "height":"70px"
     }
     const styleCard = {
-        "marginLeft":"15px"
+        "marginLeft":"30px",
+        "marginRight": "50%"
+    }
+
+    const timeLineContainer = {
+        "marginLeft": "25%",
+        "marginRight": "25%s"
     }
     return(
         <div id="#history">
             <Container>
                 <Title name={"JOURNEY"} />
             </Container>
-            <Container>
+            <Container
+                style={timeLineContainer}
+            >
                 <Timeline>
                     <TimelineEvent
                         title="Aldi, Hermitage, TN"
                         createdAt="February 2012 - March 2019"
                         icon={<Image style={styleImg} src={Aldi} size="big" circular />}
-                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >As a shift manager, I learned to much about managing different personalities all while maintaining an entire grocery store. During my time here, it taught me how to properly communicate with others, strengthen my customer service skills, time management, and multitask.</TimelineEvent>
@@ -40,7 +47,6 @@ export default function History(){
                         createdAt="May 2015 - December 2017"
                         icon={<Image style={overrideImg} src={MTSU}
                         size="big" circular/>}
-                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
@@ -51,7 +57,6 @@ export default function History(){
                         createdAt="February 2019 - August 2019"
                         icon={<Image style={overrideImg} src={NSS}
                         size="big" circular/>}
-                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
@@ -62,7 +67,6 @@ export default function History(){
                         createdAt="August 2019 - Current"
                         icon={<Image style={overrideImg} src={AOS}
                         size="big" circular/>}
-                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
@@ -73,13 +77,13 @@ export default function History(){
                         createdAt="February 2020 - Current"
                         icon={<Image style={overrideImg} src={NSS}
                         size="big" circular/>}
-                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
                         As a teaching assistant, I assist in creating and maintaing a C#/.NET curriculum for night cohorts. Support lead instructor with answering questions for students and offering study sessions covering Web API using both ADO.NET, Dapper and full stack questions using React.
                     </TimelineEvent>
                 </Timeline>
+
             </Container>
         </div>
     )
