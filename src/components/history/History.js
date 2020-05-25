@@ -31,7 +31,7 @@ export default function History(){
                         title="Aldi, Hermitage, TN"
                         createdAt="February 2012 - March 2019"
                         icon={<Image style={styleImg} src={Aldi} size="big" circular />}
-                        collapsible="true"
+                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >As a shift manager, I learned to much about managing different personalities all while maintaining an entire grocery store. During my time here, it taught me how to properly communicate with others, strengthen my customer service skills, time management, and multitask.</TimelineEvent>
@@ -40,7 +40,7 @@ export default function History(){
                         createdAt="May 2015 - December 2017"
                         icon={<Image style={overrideImg} src={MTSU}
                         size="big" circular/>}
-                        collapsible="true"
+                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
@@ -51,7 +51,7 @@ export default function History(){
                         createdAt="February 2019 - August 2019"
                         icon={<Image style={overrideImg} src={NSS}
                         size="big" circular/>}
-                        collapsible="true"
+                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
@@ -59,14 +59,25 @@ export default function History(){
                     </TimelineEvent>
                     <TimelineEvent
                         title="Software Developer"
-                        createdAt="August 2019 - current"
+                        createdAt="August 2019 - Current"
                         icon={<Image style={overrideImg} src={AOS}
                         size="big" circular/>}
-                        collapsible="true"
+                        collapsible={true}
                         container='card'
                         style={styleCard}
                     >
                         Assisted in the maintenance of company's main web portal using the .NET Framework. Contributed code through Azure DevOps and participating in a Agile-like environment. Sole developer of the training log application created for multiple teams using Blazor Server Side Framework. Collabrated with third-party team to change the UI aesthetic such as HTML, CSS and JavaScript, of sister company's web application.
+                    </TimelineEvent>
+                    <TimelineEvent
+                        title="Software Developer & Teaching Assistant"
+                        createdAt="February 2020 - Current"
+                        icon={<Image style={overrideImg} src={NSS}
+                        size="big" circular/>}
+                        collapsible={true}
+                        container='card'
+                        style={styleCard}
+                    >
+                        As a teaching assistant, I assist in creating and maintaing a C#/.NET curriculum for night cohorts. Support lead instructor with answering questions for students and offering study sessions covering Web API using both ADO.NET, Dapper and full stack questions using React.
                     </TimelineEvent>
                 </Timeline>
             </Container>
