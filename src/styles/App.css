@@ -1,0 +1,7 @@
+body {
+  background-color: #e6e7d1;
+}
+
+i.hidden.icon::before {
+  opacity: 0; 
+}
